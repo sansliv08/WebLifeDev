@@ -1,0 +1,670 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: white;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(0, 24, 69);
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 220ms;
+}
+
+.all-vh {
+  min-height: 100vh;
+}
+
+.vertical-center-row {
+  align-items: center;
+}
+
+.vertical-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.headline__h1 {
+  font-family: 'Changa', sans-serif;
+  font-size: 5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 4px;
+  margin: 0 0 0.25em 0;
+}
+
+.headline__h1-mini {
+  font-family: 'Changa', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.headline__h2 {
+  font-family: 'Changa', sans-serif;
+  font-size: 4em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 4px;
+  margin: 0 0 0.75em 0;
+}
+
+.headline__h3 {
+  font-family: 'Changa', sans-serif;
+  font-weight: 200;
+  letter-spacing: 6px;
+  margin-top: 0em;
+}
+
+.headline__h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgb(193, 198, 209);
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.mt-5 {
+  margin: 5em 0 1.5em;
+}
+
+.btn {
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Changa', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: max-content;
+}
+
+.btn i {
+  margin-right: 0.75em;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, rgba(0, 18, 51, 1) 50%, rgba( 0, 102, 200, 1) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  border: 2px solid rgba( 0, 102, 200, 1);
+  color: rgba( 0, 102, 200, 1);
+}
+
+.btn-primary:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.btn-secondary {
+  background: linear-gradient(to left, rgba(0, 18, 51, 0.5) 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-position: left bottom;
+  color: rgba( 0, 102, 200, 1);
+  font-weight: 400;
+}
+
+.rounded-simple {
+  border-radius: 10px;
+}
+
+.headline__letter {
+  display: inline-flex;
+  transition: transform 0.8s;
+}
+
+.headline__letter:hover {
+  -webkit-animation: jello-vertical 0.9s both;
+          animation: jello-vertical 0.9s both;
+}
+
+.services {
+}
+
+.services__item {
+  padding: 15px;
+  text-align: center;
+  /* border: 2px solid rgba( 0, 102, 200, 1); */
+  border-radius: 25px;
+  background-color: rgba(0, 18, 51, 0.5);
+  height: 100%;
+}
+
+.services__icon {
+  font-size: 3em;
+}
+
+.services__title {
+  font-family: 'Changa', sans-serif;
+  font-weight: 200;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+.services__description {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
+}
+
+.py-15 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.mb-0-25em {
+  margin-bottom: 0.25em !important;
+}
+
+.mb-2-5em {
+  margin-bottom: 2.5em !important;
+}
+
+.team {
+  background-color: rgba(0, 102, 200, 1);
+}
+
+.team__item {
+  text-align: center;
+}
+
+.picture-container {
+  overflow: hidden;
+}
+
+.member__picture {
+  width: 85%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.member__picture:hover {
+  transform: scale(1.6) rotate(25deg);
+  filter: brightness(80%);
+}
+
+.member__name {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  /* margin: 0; */
+}
+
+.hr-50 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1.5px solid rgb(0, 13, 37);
+}
+
+.img-contact {
+  width: 100%;
+  height: auto;
+}
+
+.contact__card {
+  background-color: rgba(0, 18, 51, 0.5);
+  color: white;
+  padding: 30px;
+  width: 75%;
+  margin: auto;
+}
+
+.contact__item {
+  text-align: center;
+}
+
+.contact__email {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: rgb(193, 198, 209);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.copyright {
+  margin: -10px 0 0 0;
+  font-size: 0.7em;
+  color: rgb(193, 198, 209);
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-12-7 22:53:25
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-vertical
+ * ----------------------------------------
+ */
+ @-webkit-keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            color: white;
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+            color: rgba( 0, 102, 200, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            color: white;
+  }
+}
+@keyframes jello-vertical {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            color: white;
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+            color: #0066c8;
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            color: white;
+  }
+}
+
+
+.ball {
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 22.5%;
+  transform-origin: 390% center;
+  animation: circle 9s infinite linear;
+}
+
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+
+/* Display none in differents MediaQuery */
+
+  /* Media Query Mobile 639px */
+  @media (max-width: 639px) {
+    .d-sm-none {
+      display: none !important;
+    }
+    .headline__h1 {
+      margin-top: 0.75em;
+      font-size: 4.5em;
+    }
+    .contact__card {
+      width: 100%;
+    }
+    .headline__h1-mini {
+      margin-top: 1em;
+      font-size: 2.25em;
+    }
+    .copyright {
+      margin-top: 1em;
+      text-align: center;
+    }
+  }
+
+
+  /* Media Queria Query Tablet 992px */
+  @media (min-width: 640px) and (max-width: 992px) {
+    .d-md-none {
+      display: none !important;
+    }
+
+    .pr-md-0 {
+      padding-right: 0 !important;
+    }
+    .contact__card {
+      width: 100%;
+    }
+  }
+
+  /* Media Query desktop >992px */
+  @media (min-width: 992px) {
+    .d-lg-none {
+      display: none !important;
+    }
+
+    .ml-lg-64 {
+      margin-left: 64px;
+    }
+  }
+
+@media (min-width: 640px) {
+  .img-before-team {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

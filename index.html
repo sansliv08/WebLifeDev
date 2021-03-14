@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Web Life Dev:: Homepage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/nav.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="nav-bar">
+    <div class="site__brand">
+      <img src="img/logo3.png" class="site__logo" alt="">
+    </div>
+    <nav class="nav">
+      <div id="menuToggle">
+        <input type="checkbox" class="d-lg-none" />
+          <span></span>
+          <span></span>
+          <span></span>
+        <ul class="nav__list" id="menu">
+          <li class="nav__item nav__item--active">
+            <a href="index.html" class="nav__link">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="works.html" class="nav__link">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="nav-social d-sm-none d-md-none">
+      <ul>
+        <li>
+          <a href="http://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+
+  <main class="ml-lg-64">
+    <div class="container">
+      <div class="row all-vh vertical-center-row">
+        <div class="col vertical-center-column">
+          <h1 class="headline__h1">
+            <span class="headline__letter">W</span class="headline__letter"><span class="headline__letter">e</span><span class="headline__letter">b</span>
+            <br>
+            <span class="headline__letter">L</span><span class="headline__letter">i</span><span class="headline__letter">f</span><span class="headline__letter">e</span>
+            <br class="d-sm-none d-md-none d-lg-none">
+            <span class="headline__letter">D</span><span class="headline__letter">e</span><span class="headline__letter">v</span>
+
+          </h1>
+          <h3 class="headline__h3">Bring your website to life!</h3>
+          <h5 class="headline__h5 mt-5">
+            Full Stack Development
+          </h5>
+
+          <a href="contacts.html" class="btn btn-primary rounded-simple">
+            Contacts
+          </a>
+        </div>
+        <div class="col d-sm-none pr-md-0 vertical-center-column">
+          <picture>
+            <source media="(min-width: 992px)" srcset="img/logo3.png" >
+            <source media="(max-width: 992px)" srcset="img/logo3-half.png">
+            <img src="img/logo3.png" class="img-fluid">
+          </picture>
+          <img src="img/ball.png" class="ball d-sm-none d-md-none" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
