@@ -217,6 +217,27 @@ a {
   font-weight: 400;
 }
 
+.btn-icon {
+  display: inline-flex;
+  padding: 10px 10px;
+  border: 2px solid rgba(0, 18, 51, 1);
+  border-radius: 50px;
+  background: linear-gradient(to left, white 50%, rgba(0, 18, 51, 1) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+  color: rgba(0, 18, 51, 1);
+}
+
+.btn-icon:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+.mr-1em {
+  margin-right: 1em;
+}
+
 .rounded-simple {
   border-radius: 10px;
 }
@@ -292,6 +313,7 @@ a {
   background-color: rgba( 0, 102, 200, 0.8);
   transition: 0.8s ease;
   cursor: pointer;
+  user-select: none;
   opacity: 0;
 }
 
@@ -306,6 +328,22 @@ a {
 
 
 
+/* Project Description */
+.project__name {
+  font-family: 'Changa', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(0, 13, 37);
+  margin: 0;
+}
+
+.project__description {
+  color: rgb(0, 24, 69);
+  text-align: justify;
+}
+
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
@@ -314,6 +352,10 @@ a {
 .py-15 {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+}
+
+.mt-1em {
+  margin-top: 1em !important;
 }
 
 .mb-0-25em {

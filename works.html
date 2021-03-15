@@ -26,6 +26,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/slideshow.css">
 
 	<meta name="theme-color" content="#fafafa">
 </head>
@@ -78,7 +80,16 @@
 					<div class="row works mb-2-5em">
 						<div class="col-3 col-md-6 col-sm-12 py-15">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__picture" src="https://placeimg.com/640/480/people" alt="">
+								<img class="work__picture" src="https://placeimg.com/640/480/people/any?1" alt="">
+								<h3 class="work__title">Test</h3>
+								<div class="work__item--overlay rounded-simple">
+									<h3 class="work__view" id="show-modal">View the project</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 col-md-6 col-sm-12 py-15">
+							<div class="work__item picture-container rounded-simple shadow-sm">
+								<img class="work__picture" src="https://placeimg.com/640/480/people/any?2" alt="">
 								<h3 class="work__title">Test</h3>
 								<div class="work__item--overlay rounded-simple">
 									<h3 class="work__view">View the project</h3>
@@ -87,7 +98,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__picture" src="https://placeimg.com/640/480/people" alt="">
+								<img class="work__picture" src="https://placeimg.com/640/480/people/any?3" alt="">
 								<h3 class="work__title">Test</h3>
 								<div class="work__item--overlay rounded-simple">
 									<h3 class="work__view">View the project</h3>
@@ -96,20 +107,157 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__picture" src="https://placeimg.com/640/480/people" alt="">
+								<img class="work__picture" src="https://placeimg.com/640/480/people/any?4" alt="">
 								<h3 class="work__title">Test</h3>
 								<div class="work__item--overlay rounded-simple">
 									<h3 class="work__view">View the project</h3>
 								</div>
 							</div>
 						</div>
-						<div class="col-3 col-md-6 col-sm-12 py-15">
-							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__picture" src="https://placeimg.com/640/480/people" alt="">
-								<h3 class="work__title">Test</h3>
-								<div class="work__item--overlay rounded-simple">
-									<h3 class="work__view">View the project</h3>
-								</div>
+					</div>
+
+					<!-- Modal 1 -->
+					<div class="modal-container" id="modal">
+						<div class="modal">
+							<i class="fas fa-times close-icon" id="close-modal"></i>
+							<div class="modal-content rounded-simple">
+								<!-- Slideshow Gallery -->
+								<div class="slideshow-container">
+									<!-- Full-width images with number text -->
+									<div class="row">
+										<div class="col-8">
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?1">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?2">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?3">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?4">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?5">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?6">
+											</div>
+										</div>
+										<!-- Project description -->
+										<div class="col-4">
+											<h3 class="project__name">Project Name 1</h3>
+											<p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit totam voluptatem, quibusdam facere, id deserunt corrupti, provident impedit pariatur eos error sunt aspernatur quas quidem minima tempora debitis iste?</p>
+											<a href="" class="btn-icon mr-1em" target="_blank" title="Launch"><i class="fas fa-external-link-alt"></i></a>
+											<a href="" class="btn-icon mr-1em" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+										</div>
+									</div>
+
+									<!-- Thumbnail images -->
+									<div class="row mt-1em">
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?1" onclick="currentSlide(1)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?2" onclick="currentSlide(2)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?3" onclick="currentSlide(3)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?4" onclick="currentSlide(4)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?5" onclick="currentSlide(5)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?6" onclick="currentSlide(6)" alt="">
+										</div>
+									</div>
+
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div> 
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal 2 -->
+					<div class="modal-container" id="modal-2">
+						<div class="modal">
+							<i class="fas fa-times close-icon" id="close-modal-2"></i>
+							<div class="modal-content rounded-simple">
+								<!-- Slideshow Gallery -->
+								<div class="slideshow-container">
+									<!-- Full-width images with number text -->
+									<div class="row">
+										<div class="col-8">
+											<div class="slides s">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?1">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?2">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?3">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?4">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?5">
+											</div>
+										
+											<div class="slides">
+												<img class="rounded-simple shadow-sm" src="https://placeimg.com/640/480/any?6">
+											</div>
+										</div>
+										<!-- Project description -->
+										<div class="col-4">
+											<h3 class="project__name">Project Name 2</h3>
+											<p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos velit totam voluptatem, quibusdam facere, id deserunt corrupti, provident impedit pariatur eos error sunt aspernatur quas quidem minima tempora debitis iste?</p>
+											<a href="" class="btn-icon mr-1em" target="_blank" title="Launch"><i class="fas fa-external-link-alt"></i></a>
+											<a href="" class="btn-icon mr-1em" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+										</div>
+									</div>
+
+									<!-- Thumbnail images -->
+									<div class="row mt-1em">
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?1" onclick="currentSlide(1)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?2" onclick="currentSlide(2)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?3" onclick="currentSlide(3)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?4" onclick="currentSlide(4)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?5" onclick="currentSlide(5)" alt="">
+										</div>
+										<div class="col">
+											<img class="demo cursor rounded-simple" src="https://placeimg.com/640/480/any?6" onclick="currentSlide(6)" alt="">
+										</div>
+									</div>
+
+									<!-- Next and previous buttons -->
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div> 
 							</div>
 						</div>
 					</div>
@@ -120,6 +268,7 @@
 	
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
+	<script src="js/slideshow.js"></script>
 	<script src="js/main.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
