@@ -247,17 +247,65 @@ a {
   font-size: 3em;
 }
 
-.services__title {
+.services__title, .works__category, .work__title, .work__view {
   font-family: 'Changa', sans-serif;
   font-weight: 200;
   letter-spacing: 3px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .services__description {
   font-weight: 300;
   margin-bottom: 0;
 }
+
+.work__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__picture {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.75);
+  transition: transform 0.8s;
+}
+
+.work__title {
+  position: absolute;
+  color: rgb(0, 13, 37);
+  font-family: 'Changa', sans-serif;
+  letter-spacing: 3px;
+  font-weight: 600;
+  bottom: 20px
+}
+
+.work__view {
+  margin: 0;
+}
+
+.work__item--overlay {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: rgba( 0, 102, 200, 0.8);
+  transition: 0.8s ease;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.work__item:hover .work__picture {
+  filter: brightness(1);
+  transform: scale(1.5);
+}
+
+.work__item:hover .work__item--overlay {
+  opacity: 1;
+}
+
+
+
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
@@ -447,6 +495,10 @@ a {
       margin-top: 0.75em;
       font-size: 4.5em;
     }
+    .headline__h2{
+      margin-top: 1.75em;
+    }
+
     .contact__card {
       width: 100%;
     }
