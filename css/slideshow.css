@@ -1,67 +1,92 @@
-    /* Position the image container (needed to position the left and right arrows) */
-    .slideshow-container {
-        position: relative;
-    }
-    
-    /* Hide the images by default */
-    .slides {
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow-container, .thumnail {
+    position: relative;
+}
+
+.thumnail {
+    margin-top: 1em;
+}
+
+/* Hide the images by default */
+.slides1 , .slides2, .slides3, .slides4 {
+    display: none;
+}
+
+/* .slides1 .slides2 .slides3 .slides4 > img  { */
+.slides1 img , .slides2 img, .slides3 img, .slides4 img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 13, 37, 0.75);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+    width: 100%;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* Media Query Mobile 639px */
+@media (max-width: 639px) {
+    .thumnail {
         display: none;
     }
-
-    .slides img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    /* Add a pointer when hovering over the thumbnail images */
-    .cursor {
-        cursor: pointer;
-    }
-    
-    /* Next & previous buttons */
     .prev,
     .next {
-        cursor: pointer;
-        position: absolute;
-        bottom: 4%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
+        top: 30%;
     }
-    
-    /* Position the "next button" to the right */
+}
+
+/* Media Queria Query Tablet 992px */
+@media (min-width: 640px) and (max-width: 992px) {
+    .prev,
     .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
+        bottom: 0.5%;
     }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 13, 37, 0.75);
-    }
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    /* Add a transparency effect for thumnbail images */
-    .demo {
-        opacity: 0.6;
-        width: 100%;
-    }
-    
-    .active,
-    .demo:hover {
-        opacity: 1;
-    }
+
+}

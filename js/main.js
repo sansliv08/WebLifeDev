@@ -1,13 +1,15 @@
-const modal = document.getElementById('modal');
-const modalShow = document.getElementById('show-modal');
-const modalClose = document.getElementById('close-modal');
+// Several modals in same page html
+const triggers = document.getElementsByClassName("trigger");
+const triggerArray = Array.from(triggers).entries();
+const modals = document.getElementsByClassName("modal-container");
+const closeButtons = document.getElementsByClassName("btn-close");
 
-// Show Modal
-function showModal() {
-    modal.classList.add('show-modal');
+for (let [index, trigger] of triggerArray) {
+    const toggleModal = () => {
+        modals[index].classList.toggle("show-modal");
+    };
+    trigger.addEventListener("click", toggleModal);
+    closeButtons[index].addEventListener("click", toggleModal);
+    window.addEventListener('click', (e) => (e.target === modals[index] ? modals[index].classList.toggle('show-modal') : false));
 }
 
-// Modal event Listeners
-modalShow.addEventListener('click', showModal);
-modalClose.addEventListener('click', () => modal.classList.remove('show-modal'));
-window.addEventListener('click', (e) => (e.target === modal ? modal.classList.remove('show-modal') : false));

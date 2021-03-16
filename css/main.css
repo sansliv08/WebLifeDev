@@ -342,6 +342,7 @@ a {
 .project__description {
   color: rgb(0, 24, 69);
   text-align: justify;
+  margin-top: 0;
 }
 
 
@@ -352,10 +353,6 @@ a {
 .py-15 {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
-}
-
-.mt-1em {
-  margin-top: 1em !important;
 }
 
 .mb-0-25em {
