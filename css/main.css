@@ -96,6 +96,16 @@ body {
   
 }
 
+.loader {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -197,10 +207,6 @@ a {
   padding: 5px 20px;
   font-size: 1em;
   border-radius: 10px;
-}
-
-.btn i {
-  /* margin-right: 0.75em; */
 }
 
 .btn-primary {
@@ -393,7 +399,7 @@ a {
 
 /* Team */
 .team {
-  background-color: rgba(0, 102, 200, 1);
+  background-color: #0066c8;
 }
 
 .team__item {

@@ -36,9 +36,11 @@
 
 	<!-- Add your site or application content here -->
 	<div class="nav-bar">
-		<div class="site__brand">
-			<img src="img/logo3.png" class="site__logo" alt="">
-		</div>
+		<a href="index.html">
+			<div class="site__brand">
+				<img src="img/logo3.png" class="site__logo" alt="">
+			</div>
+		</a>
 		<nav class="nav">
 			<div id="menuToggle">
 			<input type="checkbox" class="d-lg-none" />
@@ -70,14 +72,17 @@
 			</div>
 		</nav>
 	</div>
-
+	<!-- Loader -->
+	<div class="loader">
+		<img src="img/loader.svg" alt="Loading">
+	</div>
+	<!-- Content -->
 	<main class="ml-lg-64">
-		<div class="container">
+		<div class="container works-container">
 			<div class="row all-vh vertical-center-row">
 				<div class="col">
 					<h2 class="headline__h2">Works</h2>
-					<!-- <h3 class="works__category">Recents Projects</h3> -->
-					<div class="mb-0-25em" id="myBtnContainer">
+					<div class="mb-0-25em hidden" id="myBtnContainer">
 						<button class="btn btn-secondary btn-sm mr-1em btn-secondary--active" onclick="filterSelection('all')">Show All</button>
 						<button class="btn btn-secondary btn-sm mr-1em" onclick="filterSelection('recent-project')"> Recents</button>
 						<button class="btn btn-secondary btn-sm mr-1em" onclick="filterSelection('js-project')"> Javascript</button>
@@ -402,9 +407,10 @@
 	
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
-	<script src="js/slideshow.js"></script>
+	<script src="js/load-works.js"></script>
 	<script src="js/filter.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/slideshow.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>
