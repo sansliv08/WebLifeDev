@@ -117,6 +117,10 @@ a {
   margin-left: 15px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -172,10 +176,9 @@ a {
 }
 
 .btn {
-  padding: 10px 40px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   font-family: 'Changa', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
@@ -184,8 +187,20 @@ a {
   width: max-content;
 }
 
+.btn-lg {
+  padding: 10px 40px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
+.btn-sm {
+  padding: 5px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+}
+
 .btn i {
-  margin-right: 0.75em;
+  /* margin-right: 0.75em; */
 }
 
 .btn-primary {
@@ -214,11 +229,15 @@ a {
 .btn-secondary:hover {
   background-position: left bottom;
   color: rgba( 0, 102, 200, 1);
-  font-weight: 400;
+}
+
+.btn-secondary--active {
+  background: white;
+  color: rgba( 0, 102, 200, 1);
+  font-weight: 600;
 }
 
 .btn-icon {
-  display: inline-flex;
   padding: 10px 10px;
   border: 2px solid rgba(0, 18, 51, 1);
   border-radius: 50px;
@@ -234,12 +253,12 @@ a {
   color: white;
 }
 
-.mr-1em {
-  margin-right: 1em;
-}
-
 .rounded-simple {
   border-radius: 10px;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
 }
 
 .headline__letter {
@@ -252,6 +271,7 @@ a {
           animation: jello-vertical 0.9s both;
 }
 
+/* Services */
 .services {
 }
 
@@ -280,6 +300,7 @@ a {
   margin-bottom: 0;
 }
 
+/* Works */
 .work__item {
   display: flex;
   flex-direction: column;
@@ -326,7 +347,14 @@ a {
   opacity: 1;
 }
 
+/* Filtering of Works */
+.project {
+  display: none;
+}
 
+.show-project {
+  display: flex;
+}
 
 /* Project Description */
 .project__name {
@@ -345,11 +373,7 @@ a {
   margin-top: 0;
 }
 
-
-.shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75) !important;
-}
-
+/* Margin & Padding */
 .py-15 {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
@@ -363,6 +387,11 @@ a {
   margin-bottom: 2.5em !important;
 }
 
+.mr-1em {
+  margin-right: 1em;
+}
+
+/* Team */
 .team {
   background-color: rgba(0, 102, 200, 1);
 }
@@ -376,7 +405,7 @@ a {
 }
 
 .member__picture {
-  width: 85%;
+  width: 100%;
   height: auto;
   transition: transform 0.5s ease-in-out;
 }
@@ -389,7 +418,6 @@ a {
 .member__name {
   letter-spacing: 5px;
   text-transform: uppercase;
-  /* margin: 0; */
 }
 
 .hr-50 {
@@ -399,6 +427,8 @@ a {
   border-top: 1.5px solid rgb(0, 13, 37);
 }
 
+
+/* Contacts */
 .img-contact {
   width: 100%;
   height: auto;

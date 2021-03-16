@@ -76,9 +76,15 @@
 			<div class="row all-vh vertical-center-row">
 				<div class="col">
 					<h2 class="headline__h2">Works</h2>
-					<h3 class="works__category">Recents Projects</h3>
+					<!-- <h3 class="works__category">Recents Projects</h3> -->
+					<div class="mb-0-25em" id="myBtnContainer">
+						<button class="btn btn-secondary btn-sm mr-1em btn-secondary--active" onclick="filterSelection('all')">Show All</button>
+						<button class="btn btn-secondary btn-sm mr-1em" onclick="filterSelection('recent-project')"> Recents</button>
+						<button class="btn btn-secondary btn-sm mr-1em" onclick="filterSelection('js-project')"> Javascript</button>
+						<button class="btn btn-secondary btn-sm" onclick="filterSelection('php-project')"> Php</button>
+					</div>
 					<div class="row works mb-2-5em">
-						<div class="col-3 col-md-6 col-sm-12 py-15">
+						<div class="col-3 col-md-6 col-sm-12 py-15 project recent-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
 								<img class="work__picture" src="https://placeimg.com/640/480/people/any?1" alt="">
 								<h3 class="work__title">Test</h3>
@@ -87,7 +93,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 col-md-6 col-sm-12 py-15">
+						<div class="col-3 col-md-6 col-sm-12 py-15 project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
 								<img class="work__picture" src="https://placeimg.com/640/480/people/any?2" alt="">
 								<h3 class="work__title">Test</h3>
@@ -96,7 +102,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 col-md-6 col-sm-12 py-15">
+						<div class="col-3 col-md-6 col-sm-12 py-15 project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
 								<img class="work__picture" src="https://placeimg.com/640/480/people/any?3" alt="">
 								<h3 class="work__title">Test</h3>
@@ -105,7 +111,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-3 col-md-6 col-sm-12 py-15">
+						<div class="col-3 col-md-6 col-sm-12 py-15 project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
 								<img class="work__picture" src="https://placeimg.com/640/480/people/any?4" alt="">
 								<h3 class="work__title">Test</h3>
@@ -397,6 +403,7 @@
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/slideshow.js"></script>
+	<script src="js/filter.js"></script>
 	<script src="js/main.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
