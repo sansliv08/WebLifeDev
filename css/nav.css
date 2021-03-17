@@ -7,6 +7,7 @@
     top: 0;
     background-color: rgba(0, 18, 51, 1);
     display: flex;
+    z-index: 2;
 }
 
 .site__brand {
