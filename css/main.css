@@ -495,7 +495,6 @@ a {
   50% {
     -webkit-transform: scale3d(0.85, 1.15, 1);
             transform: scale3d(0.85, 1.15, 1);
-            color: rgba( 0, 102, 200, 1);
   }
   65% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
@@ -508,7 +507,7 @@ a {
   100% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-            color: white;
+            color: rgba( 0, 102, 200, 1);
   }
 }
 @keyframes jello-vertical {
@@ -528,7 +527,6 @@ a {
   50% {
     -webkit-transform: scale3d(0.85, 1.15, 1);
             transform: scale3d(0.85, 1.15, 1);
-            color: #0066c8;
   }
   65% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
@@ -541,10 +539,10 @@ a {
   100% {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-            color: white;
+            color: rgba( 0, 102, 200, 1);
+
   }
 }
-
 
 .ball {
   width: 40px;
