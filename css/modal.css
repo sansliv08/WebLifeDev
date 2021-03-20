@@ -1,12 +1,13 @@
 
 .modal-container {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 5;
 }
 
 .show-modal {
@@ -18,7 +19,7 @@
 .modal {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    width: 65%;  
+    width: 75%;  
     border-radius: 10px;
     animation: modalopen 0.75s ease-in;
 }
@@ -57,9 +58,6 @@
 
 /* Media Queria Query Smaller then Tablet 992px */
 @media (max-width: 992px) {
-    .modal-container {
-        top: 5%;
-    }
     .modal {
         width: 95%; 
     }

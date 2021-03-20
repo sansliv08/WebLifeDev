@@ -153,7 +153,7 @@ a {
   text-transform: uppercase;
   line-height: 0.9;
   letter-spacing: 3px;
-  margin: 0;
+  margin: 0 0 0.5em 0;
 }
 
 .headline__h2 {
@@ -312,23 +312,47 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.work__tab {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 68px;
+  height: 69px;
+  z-index: 3;
+
 }
 
 .work__picture {
   width: 100%;
   height: auto;
-  filter: brightness(0.75);
+  padding: 0.75em;
+  filter: brightness(0.65);
   transition: transform 0.8s;
+}
+
+.picture__gears {
+  height: 100%;
+  padding: 0;
 }
 
 .work__title {
   position: absolute;
-  color: rgb(0, 13, 37);
+  color: white;
+  text-shadow:  0px 0px 2px rgb(0, 13, 37) ;
   font-family: 'Changa', sans-serif;
+  font-weight: 600;;
   letter-spacing: 3px;
-  font-weight: 600;
-  bottom: 20px
+  bottom: 15px;
+  text-align: center;
+  opacity: 1;
 }
+
+/* .text-blue {
+  color:rgba( 0, 102, 200, 1);
+} */
 
 .work__view {
   margin: 0;
@@ -338,7 +362,7 @@ a {
   position: absolute;
   padding: 10px 20px;
   background-color: rgba( 0, 102, 200, 0.8);
-  transition: 0.8s ease;
+  transition: 0.8s ease-in;
   cursor: pointer;
   user-select: none;
   opacity: 0;
@@ -348,6 +372,10 @@ a {
   filter: brightness(1);
   transform: scale(1.5);
 }
+
+/* .work__item:hover .work__title {
+  opacity: 1;
+} */
 
 .work__item:hover .work__item--overlay {
   opacity: 1;
@@ -366,7 +394,7 @@ a {
 .project__name {
   font-family: 'Changa', sans-serif;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: rgb(0, 13, 37);
@@ -395,6 +423,14 @@ a {
 
 .mr-1em {
   margin-right: 1em;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 /* Team */
@@ -437,7 +473,8 @@ a {
 /* Contacts */
 .img-contact {
   width: 100%;
-  height: auto;
+  height: 225px;
+  object-fit: cover;
 }
 
 .contact__card {
@@ -452,12 +489,16 @@ a {
   text-align: center;
 }
 
-.contact__email {
-  font-weight: 400;
-  font-size: 0.9em;
+.contact__description {
   color: rgb(193, 198, 209);
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+.contact__email {
+  font-weight: 600;
   letter-spacing: 2px;
-  margin: 0;
+  color: rgb(0, 132, 255)
 }
 
 .copyright {
