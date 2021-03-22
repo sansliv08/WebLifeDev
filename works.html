@@ -20,7 +20,7 @@
 	<link rel="icon" type="image/png" href="apple-touch-icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;600&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet"> 
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -40,31 +40,31 @@
 			<!-- Brand -->
 			<div class="site__brand">
 				<a href="index.html">
-					<img src="img/logo-small_v3.png" class="site__logo" alt="Logo Web Life Dev">
+					<img src="img/logo-small_v3.png" class="site__logo" alt="Logo Web Life Dev" title="Web Life Dev">
 				</a>
 			</div>
 		<!-- Menu Items -->
 		<nav class="nav">
 			<ul class="nav__list">
 			<li id="nav-1" class="nav__item slide-out-1">
-				<a href="index.html" class="nav__link">
+				<a href="index.html" class="nav__link" title="Home">
 				<i class="fas fa-home"></i>
 				<span class="link__text">Home</span>
 				</a>
 			</li>
 			<li id="nav-2" class="nav__item slide-out-2">
-				<a href="about.html" class="nav__link">
+				<a href="about.html" class="nav__link" title="About">
 				<i class="fas fa-user"></i>
 				<span class="link__text">About</span>
 				</a>
 			</li>
 			<li id="nav-3" class="nav__item nav__item--active slide-out-3">
-				<a href="works.html" class="nav__link">
+				<a href="works.html" class="nav__link" title="Works">
 				<i class="fas fa-th-large"></i>
 				<span class="link__text">Works</span></a>
 			</li>
 			<li id="nav-4" class="nav__item slide-out-4">
-				<a href="contacts.html" class="nav__link">
+				<a href="contacts.html" class="nav__link" title="Contacts">
 				<i class="fas fa-envelope"></i>
 				<span class="link__text">Contacts</span></a>
 			</li>
@@ -91,14 +91,14 @@
 				<div class="col">
 					<h2 class="headline__h2">Works</h2>
 					<div class="hidden" id="myBtnContainer">
-						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em btn-secondary--active" onclick="filterSelection('all')">Show All</button>
-						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('recent-project')"> Recents</button>
-						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('js-project')"> Javascript</button>
-						<button class="btn btn-secondary btn-sm" onclick="filterSelection('php-project')"> Php</button>
+						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('all')">Show All</button>
+						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em btn-secondary--active" onclick="filterSelection('recent-project')">Recents</button>
+						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('js-project')">Javascript</button>
+						<button class="btn btn-secondary btn-sm" onclick="filterSelection('php-project')">Php</button>
 					</div>
 					<div class="row works mb-2-5em">
 						<div class="col-3 col-md-6 col-sm-12 py-15 project recent-project">
-							<img class="work__tab" src="img/faixa-web.png" alt="Mini-faixa">
+							<img class="work__band" src="img/band-web.png" alt="band">
 							<div class="work__item picture-container rounded-simple shadow-sm">
 								<img class="work__picture" src="img/WLD_logo.png" alt="WLD logo">
 								<h3 class="work__title">Web Life Dev</h3>
@@ -109,7 +109,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project recent-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-web.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-web.png" alt="band">
 								<img class="work__picture" src="img/P&Y_logo.png" alt="P&Y logo">
 								<h3 class="work__title">Pet & You</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -119,7 +119,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project recent-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-web.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-web.png" alt="band">
 								<img class="work__picture" src="img/CJI_logo.png" alt="CJI logo">
 								<h3 class="work__title">Centro Juridico Internacional</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -129,7 +129,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Music Player</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -139,7 +139,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Kanban Board</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -149,7 +149,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Light & Dark Mode</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -159,7 +159,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Joke Teller</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -169,7 +169,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Video Player</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -179,7 +179,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Infinitive Scroll</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -189,7 +189,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Pong</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -199,7 +199,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Quote generator</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -209,7 +209,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Calculator</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -219,7 +219,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Bookmark App</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -229,7 +229,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Nasa Apod</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -239,7 +239,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Animated Template</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -249,7 +249,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Animated Navigation</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -259,7 +259,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Splash Page</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -269,7 +269,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Picture in Picture</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -279,7 +279,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Paint</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -289,7 +289,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Custom Countdown</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -299,7 +299,7 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project js-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-js.png" alt="band">
 								<img class="work__picture" src="img/gears2.png" alt="gears">
 								<h3 class="work__title">Form validation</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -309,9 +309,19 @@
 						</div>
 						<div class="col-3 col-md-6 col-sm-12 py-15 project php-project">
 							<div class="work__item picture-container rounded-simple shadow-sm">
-								<img class="work__tab" src="img/faixa-mini.png" alt="Mini-faixa">
+								<img class="work__band" src="img/band-php.png" alt="band">
 								<img class="work__picture p-0" src="img/notemeet.png" alt="NoteMeet Project">
 								<h3 class="work__title">NoteMeet</h3>
+								<div class="work__item--overlay rounded-simple">
+									<h3 class="work__view trigger">View Project</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-3 col-md-6 col-sm-12 py-15 project php-project">
+							<div class="work__item picture-container rounded-simple shadow-sm">
+								<img class="work__band" src="img/band-php.png" alt="band">
+								<img class="work__picture p-0" src="img/gears2.png" alt="gears">
+								<h3 class="work__title">Task Manager</h3>
 								<div class="work__item--overlay rounded-simple">
 									<h3 class="work__view trigger">View Project</h3>
 								</div>
@@ -346,7 +356,7 @@
 										<div class="col-4 col-md-12 col-sm-12 py-15">
 											<h3 class="project__name mb-0-25em">Web Life Dev</h3>
 											<p class="project__description">Our website is a space for creating new websites and new ideas. It was developed from scratch with pure <u>html</u>, <u>css</u> and <u>javascript</u>, designed for different devices (laptop, tablet and mobile). </p>
-											<a href="https://sansliv08.github.io/Web-Life-Dev/" class="btn-icon mr-1em" target="_blank" title="Launch"><i class="fas fa-external-link-alt"></i></a>
+											<a href="https://sansliv08.github.io/Web-Life-Dev/" class="btn btn-icon mr-1em" target="_blank" title="Launch"><i class="fas fa-external-link-alt"></i></a>
 											<!-- <a href="" class="btn btn-icon mr-1em" target="_blank" title="Source Code"><i class="fab fa-github"></i></a> -->
 										</div>
 									</div>
@@ -1118,9 +1128,8 @@
 										<!-- Project description -->
 										<div class="col-4 col-md-12 col-sm-12 py-15">
 											<h3 class="project__name">Task Manager</h3>
-											<p class="project__description">The backend of this project was developed with Php and SQL. It's a social networking website with the following features: user authentication system; posts of text, image with tags; comments to posts; posts likes system; requests for friendship between users; friends; notifications of pending and accepted friend requests, as well as notifications of likes, comments and posts; search system; account settings; and also dashboard of administrator.
-											</p>
-											<a href="https://github.com/sansliv08/notemeet" class="btn btn-icon" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
+											<p class="project__description">The backend of this project was developed with laravel and SQL. It has the following features: user authentication; create new todo, edit and delete; create new category, edit and delete; category associated with the post; todos List and also complete todo.</p>
+											<a href="https://github.com/sansliv08/task-manager" class="btn btn-icon" target="_blank" title="Source Code"><i class="fab fa-github"></i></a>
 										</div>
 									</div>
 

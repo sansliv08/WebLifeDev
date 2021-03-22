@@ -88,12 +88,13 @@ textarea {
    ========================================================================== */
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
   background-color: rgb(0, 24, 69);
   background: #000428;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
 }
 
 .loader {
@@ -176,13 +177,9 @@ a {
 .headline__h5 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: rgb(193, 198, 209);
+  color: rgb(207, 207, 208);
   letter-spacing: 3px;
   margin: 0;
-}
-
-.mt-5 {
-  margin: 5em 0 1.5em;
 }
 
 .btn {
@@ -315,7 +312,7 @@ a {
   width: 100%;
 }
 
-.work__tab {
+.work__band {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -332,10 +329,6 @@ a {
   transition: transform 0.8s;
 }
 
-.p-0 {
-  padding: 0;
-}
-
 .work__title {
   position: absolute;
   color: white;
@@ -347,10 +340,6 @@ a {
   text-align: center;
   opacity: 1;
 }
-
-/* .text-blue {
-  color:rgba( 0, 102, 200, 1);
-} */
 
 .work__view {
   margin: 0;
@@ -370,10 +359,6 @@ a {
   filter: brightness(1);
   transform: scale(1.5);
 }
-
-/* .work__item:hover .work__title {
-  opacity: 1;
-} */
 
 .work__item:hover .work__item--overlay {
   opacity: 1;
@@ -406,9 +391,17 @@ a {
 }
 
 /* Margin & Padding */
+.p-0 {
+  padding: 0;
+}
+
 .py-15 {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
+}
+
+.mt-5 {
+  margin: 5em 0 1.5em;
 }
 
 .mb-0-25em {
@@ -433,7 +426,8 @@ a {
 
 /* Team */
 .team {
-  background-color: #0066c8;
+  background-color: rgb(0, 102, 200);
+  justify-content: center;
 }
 
 .team__item {
@@ -456,17 +450,26 @@ a {
 }
 
 .member__name {
+  font-family: 'Changa', sans-serif;
+  font-weight: 400;
+  font-size: 2.25em;
   letter-spacing: 5px;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .hr-50 {
+  display: inline-flex;
   width: 30%;
+  margin-top: 0.5em;
   margin-left: auto;
   margin-right: auto;
   border-top: 1.5px solid rgb(0, 13, 37);
 }
 
+.member__description {
+  font-size: 0.9em;
+}
 
 /* Contacts */
 .img-contact {
