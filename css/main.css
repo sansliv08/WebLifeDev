@@ -322,7 +322,6 @@ a {
   width: 68px;
   height: 69px;
   z-index: 3;
-
 }
 
 .work__picture {
@@ -333,7 +332,9 @@ a {
   transition: transform 0.8s;
 }
 
-
+.p-0 {
+  padding: 0;
+}
 
 .work__title {
   position: absolute;
