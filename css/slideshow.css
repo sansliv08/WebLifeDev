@@ -8,12 +8,11 @@
 }
 
 /* Hide the images by default */
-.slides1 , .slides2, .slides3, .slides4 {
+.slides1 , .slides2, .slides3, .slides4, .slides5, .slides6, .slides7 {
     display: none;
 }
 
-/* .slides1 .slides2 .slides3 .slides4 > img  { */
-.slides, .slides1 img , .slides2 img, .slides3 img, .slides4 img {
+.slides1 img , .slides2 img, .slides3 img, .slides4 img, .slides5 img, .slides6 img, .slides7 img {
     width: 100%;
     height: auto;
     /* height: 50vh; */

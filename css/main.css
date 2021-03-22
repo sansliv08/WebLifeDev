@@ -333,10 +333,7 @@ a {
   transition: transform 0.8s;
 }
 
-.picture__gears {
-  height: 100%;
-  padding: 0;
-}
+
 
 .work__title {
   position: absolute;

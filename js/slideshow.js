@@ -29,12 +29,15 @@
 //     // captionText.innerHTML = dots[slideIndex-1].alt;
 // } 
 
-var slideIndex = [1, 1, 1, 1];
-var slideId = ["slides1", "slides2", "slides3", "slides4"]
+var slideIndex = [1, 1, 1, 1, 1, 1, 1];
+var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6", "slides7"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+showSlides(1, 6);
 
 // Next/previous controls
 function plusSlides(n, no) {
