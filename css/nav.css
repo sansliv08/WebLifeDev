@@ -19,7 +19,8 @@
 
 .site__logo {
     width: 50px;
-    margin: 6px;
+    height: auto;
+    margin: 7px;
 }
 
 /* Nav Menu Items */
@@ -30,48 +31,6 @@
 
 .nav__link i {
     font-size: 1.25em;
-}
-
-/* Old version */
-/* Nav-social */
-.nav-social {
-    margin: 1.25em 0 1.25em 0;
-}
-
-.nav-social ul {
-    list-style: none;
-    margin: 0.75em 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-social ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-social li {
-    font-size: 1.25em;
-    padding: 0 1.25em 0 1.25em;
-}
-
-.nav-primary li a {
-    color: rgb(0, 13, 37) ;
-}
-
-.nav-primary li a:hover {
-    color: white;
-}
-
-.nav-secondary li a {
-    color: rgb(31, 147, 255) ;
-}
-
-.nav-secondary li a:hover {
-    filter: brightness(0.7) ;
 }
 
 /* Media Queria Laptop - bigger then 992px */
@@ -338,5 +297,4 @@
     .change .bar3 {
         transform: rotate(45deg) translate(-6px, -8px);
     }
-
 }

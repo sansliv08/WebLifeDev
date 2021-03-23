@@ -1,0 +1,92 @@
+.loader {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 24, 69);
+}
+
+.work__band {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 68px;
+    height: 69px;
+    z-index: 3;
+}
+
+.work__picture {
+    padding: 0.75em;
+    filter: brightness(0.65);
+    transition: transform 0.8s;
+}
+
+.works__category, .work__title, .work__view {
+    font-family: 'Changa', sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+}
+
+.work__title {
+    position: absolute;
+    text-shadow:  0px 0px 2px rgb(0, 13, 37) ;
+    font-weight: 600;;
+    bottom: 15px;
+    opacity: 1;
+}
+
+.work__item--overlay {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: rgba( 0, 102, 200, 0.8);
+    transition: 0.8s ease-in;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.work__item:hover .work__picture {
+    filter: brightness(1);
+    transform: scale(1.5);
+}
+
+.work__item:hover .work__item--overlay {
+    display: block;
+}
+
+/* Filtering of Works */
+.project {
+    display: none;
+}
+
+.show-project {
+    display: flex;
+}
+
+/* Project Description */
+.project__name {
+    font-family: 'Changa', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(0, 13, 37);
+    margin: 0;
+}
+
+.project__description {
+    color: rgb(0, 24, 69);
+    text-align: justify;
+    margin-top: 0;
+}
