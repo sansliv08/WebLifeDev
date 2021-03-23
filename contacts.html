@@ -27,6 +27,14 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/nav.css">
 
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Script defer - to run in the end of html -->
+    <!-- AOS.js -->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/main.js"></script>
+
 	<meta name="theme-color" content="#fafafa">
 </head>
 
@@ -83,7 +91,7 @@
 			<div class="row all-vh vertical-center-row">
 				<div class="col">
 					<h2 class="headline__h2">contacts</h2>
-					<div class="contact__card rounded-simple shadow-sm">
+					<div class="contact__card rounded-simple shadow-sm" data-aos="fade-in">
 						<div class="row">
 							<div class="col col-sm-12 py-15">
 								<div class="picture-container">
@@ -126,7 +134,6 @@
 	
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>

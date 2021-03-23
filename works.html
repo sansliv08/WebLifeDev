@@ -29,6 +29,14 @@
 	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/slideshow.css">
 
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Script defer - to run in the end of html -->
+    <!-- AOS.js -->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/main.js"></script>
+
 	<meta name="theme-color" content="#fafafa">
 </head>
 
@@ -90,16 +98,16 @@
 			<div class="row all-vh vertical-center-row">
 				<div class="col">
 					<h2 class="headline__h2">Works</h2>
-					<div class="hidden" id="myBtnContainer">
+					<div class="hidden mb-2-5em" id="myBtnContainer">
 						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('all')">Show All</button>
 						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em btn-secondary--active" onclick="filterSelection('recent-project')">Recents</button>
 						<button class="btn btn-secondary btn-sm mb-0-25em mr-1em" onclick="filterSelection('js-project')">Javascript</button>
 						<button class="btn btn-secondary btn-sm" onclick="filterSelection('php-project')">Php</button>
 					</div>
-					<div class="row works mb-2-5em">
+					<div class="row works mb-2-5em" data-aos="flip-up" data-aos-delay="600">
 						<div class="col-3 col-md-6 col-sm-12 py-15 project recent-project">
-							<img class="work__band" src="img/band-web.png" alt="band">
 							<div class="work__item picture-container rounded-simple shadow-sm">
+								<img class="work__band" src="img/band-web.png" alt="band">
 								<img class="work__picture" src="img/WLD_logo.png" alt="WLD logo">
 								<h3 class="work__title">Web Life Dev</h3>
 								<div class="work__item--overlay rounded-simple">
@@ -1159,7 +1167,6 @@
 	
 	<script src="js/vendor/modernizr-3.11.2.min.js"></script>
 	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/load-works.js"></script>
 	<script src="js/filter.js"></script>
 	<script src="js/modal.js"></script>
