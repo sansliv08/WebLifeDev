@@ -39,7 +39,6 @@ navItems.forEach((nav) => {
     nav.addEventListener('click', toggleNav);
 });
 
-
 // AOS
 AOS.init({
     delay: 200, // values from 0 to 3000, with step 50ms
@@ -47,4 +46,3 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
 });
-

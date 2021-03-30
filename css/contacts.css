@@ -1,5 +1,6 @@
 /* Contacts */
 .img-contact {
+    width: 100%;
     height: 225px;
     object-fit: cover;
 }

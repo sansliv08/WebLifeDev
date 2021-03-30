@@ -21,20 +21,27 @@
 .nav-social li {
     font-size: 1.25em;
     padding: 0 1.25em 0 1.25em;
+    transition: transform 0.3s ease-in;
 }
 
-.nav-primary li a {
+.nav-social li:active {
+    transform: translateY(0.3em);
+}
+
+.nav-primary li {
     color: rgb(0, 13, 37) ;
 }
 
-.nav-primary li a:hover {
+.nav-primary li:hover {
     color: white;
+    transform: scale(1.5);
 }
 
-.nav-secondary li a {
+.nav-secondary li {
     color: rgb(31, 147, 255) ;
 }
 
-.nav-secondary li a:hover {
-    filter: brightness(0.7) ;
+.nav-secondary li:hover {
+    filter: brightness(0.7);
+    transform: scale(1.5);
 }

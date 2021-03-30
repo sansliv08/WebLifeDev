@@ -34,9 +34,9 @@
 .next {
     cursor: pointer;
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: auto;
-    padding: 16px;
+    padding: 9px;
     margin-top: -50px;
     color: white;
     font-weight: bold;
@@ -83,7 +83,7 @@
     }
     .prev,
     .next {
-        bottom: 67.5%;
+        bottom: 72.5%;
     }
 }
 
@@ -91,7 +91,6 @@
 @media (min-width: 640px) and (max-width: 992px) {
     .prev,
     .next {
-        bottom: 0.5%;
+        bottom: 0%;
     }
-
 }
