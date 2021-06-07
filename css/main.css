@@ -222,7 +222,8 @@ a {
 
 .btn-secondary:hover {
   background-position: left bottom;
-  color: rgba( 0, 102, 200, 1);
+  color: rgb(0, 102, 200);
+  color: #ffee6b;
 }
 
 .btn-secondary--active {
@@ -265,12 +266,12 @@ a {
   padding: 0 !important;
 }
 
-.py-15 {
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+.py-10 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
-.mt-5 {
+.mtb-5 {
   margin: 5em 0 1.5em;
 }
 
@@ -292,6 +293,14 @@ a {
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-2 {
+  margin-top: 2em;
 }
 
 /* Display none in differents MediaQuery */
