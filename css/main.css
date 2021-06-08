@@ -270,6 +270,11 @@ a {
   padding-bottom: 10px !important;
 }
 
+.py-15 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
 .mtb-5 {
   margin: 5em 0 1.5em;
 }
