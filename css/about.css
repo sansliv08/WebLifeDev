@@ -35,16 +35,18 @@
 
 .team__item {
     text-align: center;
+    height: 80%;
 }
 
 .member__picture {
     width: 100%;
     height: auto;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+
 }
 
 .member__picture:hover {
-    transform: scale(1.6) rotate(25deg);
+    transform: scale(1.2) rotate(10deg);
     filter: brightness(80%);
 }
 

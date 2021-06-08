@@ -223,7 +223,6 @@ a {
 .btn-secondary:hover {
   background-position: left bottom;
   color: rgb(0, 102, 200);
-  color: #ffee6b;
 }
 
 .btn-secondary--active {
