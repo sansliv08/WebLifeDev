@@ -19,7 +19,6 @@
 }
 
 .nav-social li {
-    font-size: 1.25em;
     padding: 0 1.25em 0 1.25em;
     transition: transform 0.3s ease-in;
 }
@@ -28,20 +27,52 @@
     transform: translateY(0.3em);
 }
 
-.nav-primary li {
+.nav-secondary li {
     color: rgb(0, 13, 37) ;
+    font-size: 1.25em;
 }
 
-.nav-primary li:hover {
+.nav-secondary li:hover {
     color: white;
     transform: scale(1.5);
 }
 
-.nav-secondary li {
-    color: rgb(31, 147, 255) ;
+.nav-tertiary li {
+    color: white;
+    font-size: 1.25em;
 }
 
-.nav-secondary li:hover {
-    filter: brightness(0.7);
-    transform: scale(1.5);
+.nav-tertiary li:hover {
+    filter: brightness(0.9);
+    transform: scale(1.35);
+}
+
+.nav-primary li {
+    color: whitesmoke;
+    font-size: 0.9em;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-primary li:hover i {
+    opacity: 0;
+}
+
+.nav-primary li::after {
+    content: '';
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(0, 102, 200);
+    margin-top: -2em;
+    display: block;
+    opacity: 0;
+}
+
+.nav-primary li:hover::after {
+    opacity: 1;
+}
+
+.nav-primary li:first-child::after {
+    content: 'LinkedIn';
 }

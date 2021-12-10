@@ -10,13 +10,6 @@
     z-index: 2;
 }
 
-.site__brand {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-}
-
 .site__logo {
     width: 50px;
     height: auto;
@@ -38,11 +31,12 @@
     .nav-bar {
         height: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     .site__brand {
+        display: flex;
         background-color: rgb(0, 13, 37);
     }
 
@@ -131,6 +125,13 @@
         transform: translateX(-100vw);
     }
 
+    .site__brand {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    
     nav,
     .nav__list {
         width: 100vw;
@@ -171,10 +172,6 @@
         text-align: center;
     }
 
-    .nav__link:hover {
-        transform: scale(1.5);
-    }
-
     .nav__link::before {
         content: "";
         width: 25vw;
@@ -212,6 +209,10 @@
         margin-left: 0.5em;
     }
 
+    .nav-primary {
+        display: none;
+    }
+    
     /* Slide in animation with delay for each nav item */
     .slide-in-1 {
         animation: slide-in 0.4s linear 0.2s both;
