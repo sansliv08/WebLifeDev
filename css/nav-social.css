@@ -5,21 +5,12 @@
 
 .nav-social ul {
     list-style: none;
-    margin: 0.75em 0;
+    margin: 0.75em 0 0 0;
     padding: 0;
-    display: flex;
-}
-
-.nav-social ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
 .nav-social li {
-    padding: 0 1.25em 0 1.25em;
     transition: transform 0.3s ease-in;
 }
 
@@ -27,9 +18,14 @@
     transform: translateY(0.3em);
 }
 
-.nav-secondary li {
-    color: rgb(0, 13, 37) ;
+.nav-secondary ul, .nav-tertiary ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-secondary li, .nav-tertiary li {
     font-size: 1.25em;
+    padding: 0 0.60em;
 }
 
 .nav-secondary li:hover {
@@ -37,9 +33,11 @@
     transform: scale(1.5);
 }
 
+.nav-secondary li {
+    color: rgb(0, 13, 37);
+}
 .nav-tertiary li {
     color: white;
-    font-size: 1.25em;
 }
 
 .nav-tertiary li:hover {
@@ -47,10 +45,15 @@
     transform: scale(1.35);
 }
 
+.nav-primary ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .nav-primary li {
     color: whitesmoke;
     font-size: 0.9em;
-    padding: 0;
+    padding: 0.60em 0;
     text-align: center;
 }
 
@@ -60,8 +63,8 @@
 
 .nav-primary li::after {
     content: '';
-    font-size: 9px;
-    letter-spacing: 2px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     color: rgb(0, 102, 200);
     margin-top: -2em;
@@ -75,4 +78,7 @@
 
 .nav-primary li:first-child::after {
     content: 'LinkedIn';
+}
+.nav-primary li:last-child::after {
+    content: 'Facebook';
 }
