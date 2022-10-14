@@ -77,8 +77,11 @@
 }
 
 .nav-primary li:first-child::after {
-    content: 'LinkedIn';
+    content: 'Facebook';
+}
+.nav-primary li:nth-child(2)::after {
+    content: 'Instagram';
 }
 .nav-primary li:last-child::after {
-    content: 'Facebook';
+    content: 'LinkedIn';
 }
