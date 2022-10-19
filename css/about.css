@@ -1,4 +1,7 @@
 /* Services */
+.services {
+    justify-content: space-around;
+}
 .services__item {
     padding: 15px;
     text-align: center;
@@ -13,8 +16,8 @@
 
 .services__title {
     font-family: 'Changa', sans-serif;
-    font-weight: 200;
-    letter-spacing: 3px;
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 .services__description {

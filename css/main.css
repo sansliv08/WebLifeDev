@@ -154,6 +154,16 @@ a {
 
 .headline__h3 {
   font-family: 'Changa', sans-serif;
+  font-weight: 400;
+  font-size: 2.25em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 0.25em;
+  margin-bottom: 0;
+}
+
+.headline__h4 {
+  font-family: 'Changa', sans-serif;
   font-size: 1.17em;
   font-weight: 200;
   letter-spacing: 6px;
@@ -283,6 +293,9 @@ a {
   margin-bottom: 0.25em !important;
 }
 
+.mb-1em {
+  margin-bottom: 1em;
+}
 .mb-2-5em {
   margin-bottom: 2.5em !important;
 }
