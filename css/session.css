@@ -1,0 +1,148 @@
+.text-blue {
+    color:rgb(0, 102, 200)
+}
+.text-yellow {
+    color:rgb(255, 238, 3);
+}
+.text-white {
+    color:rgb(255, 255, 255);
+}
+.text-black {
+    color: rgba(0, 18, 51, 1);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+.text-bold {
+    font-weight: 600;
+}
+
+.headline__session {
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.headline__faq {
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.ball {
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.number {
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: rgba(0, 18, 51, 1);
+}
+
+.img-ads{
+    width: 80%;
+    height: auto;
+}
+.img-logo {
+    width: 100px;
+    height: auto;
+}
+
+.btn-tertiary {
+    background: linear-gradient(to left, rgb(0, 78, 146) 50%, rgb(255, 238, 3) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid rgb(255, 238, 3);
+    color: rgb(255, 238, 3);
+}
+
+.btn-tertiary:hover {
+background-position: left bottom;
+color: rgb(0, 78, 146);
+}
+
+.btn-tertiary--active {
+background: rgb(255, 238, 3);
+color: white;
+font-weight: 600;
+}
+
+.btn-quaternary {
+    background: linear-gradient(to left, rgb(255, 238, 3) 50%, rgb(0, 78, 146) 50%); 
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    border: 2px solid rgb(0, 78, 146);
+    /* color: rgba(0, 18, 51, 1); */
+    color: rgb(0, 78, 146);
+}
+
+.btn-quaternary:hover {
+background-position: left bottom;
+color: rgb(255, 238, 3);
+border: 2px solid rgb(255, 238, 3);;
+}
+
+.btn-quaternary--active {
+background: rgb(0, 78, 146);
+color: white;
+font-weight: 600;
+}
+
+.detalles, .faq {
+    background-color: white;
+}
+
+.detalles, .who, .faq, .who-two {
+    padding: 4em 0;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.faq__text {
+    margin-top: 0.5em;
+    margin-bottom: 4em;
+}
+
+.faq__hr {
+    width: 200px;
+    border-top: 6px solid rgba(0, 18, 51, 1);
+    border-bottom: 3px solid yellow;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 3em;
+}
+
+.mt-4 {
+    margin-top: 4em;
+}
+
+/* Display none in differents MediaQuery */
+  /* Media Query Mobile 639px */
+  @media (max-width: 639px) {
+    .d-sm-none {
+      display: none !important;
+    }
+    .text-sm-center {
+        text-align: center;
+    }
+    .mt-sm-2 {
+        margin-top: 2em;
+    }
+    .sm-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
