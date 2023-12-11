@@ -95,11 +95,11 @@ color: white;
 font-weight: 600;
 }
 
-.detalles, .faq {
+.plano-2024, .detalles, .faq, .who-three {
     background-color: white;
 }
 
-.detalles, .who, .faq, .who-two {
+.plano-2024, .raz, .detalles, .who, .faq, .who-two, .who-three {
     padding: 4em 0;
 }
 
@@ -127,6 +127,42 @@ footer {
 .mt-4 {
     margin-top: 4em;
 }
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+/* Services */
+.razones {
+    justify-content: space-around;
+}
+.razones__item {
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgba(0, 18, 51, 0.5);
+    height: 100%;
+}
+
+.razones__icon {
+    font-size: 3em;
+}
+
+.razones__title {
+    font-family: 'Changa', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.razones__description {
+    font-weight: 300;
+}
+
+.text__small {
+    font-size: 85%;
+    color: rgb(193, 198, 209);
+}
+
 
 /* Display none in differents MediaQuery */
   /* Media Query Mobile 639px */

@@ -179,6 +179,9 @@ a {
   margin: 0;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
 .btn {
   text-align: center;
   text-decoration: none;
