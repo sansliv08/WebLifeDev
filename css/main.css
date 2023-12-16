@@ -320,7 +320,7 @@ a {
 }
 
 .mt-2 {
-  margin-top: 2em;
+  margin-top: 2em !important;
 }
 
 /* Display none in differents MediaQuery */

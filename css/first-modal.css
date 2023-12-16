@@ -1,56 +1,88 @@
-.text-blue {
-    color:rgb(0, 102, 200)
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
 }
-.text-yellow {
-    color:rgb(255, 238, 3);
+
+.show-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.text-white {
-    color:rgb(255, 255, 255);
+
+.modal {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 35%;  
+    border-radius: 10px;
+    animation: modalopen 0.75s ease-in;
 }
-.text-black {
+
+.close-icon {
+    float: right;
     color: rgba(0, 18, 51, 1);
+    font-size: 24px;
+    position: relative;
+    top: 15px;
+    right: 15px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 3;
+    transition: transform 1s;
 }
 
-.text-underline {
-    text-decoration: underline;
-}
-.text-bold {
-    font-weight: 600;
+.close-icon:hover {
+    transform: rotate(90deg);
 }
 
-.headline__session {
+.modal-content {
+    padding: 40px 20px;
+    background: whitesmoke;
+}
+
+.modal__title {
     font-family: 'Changa', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 3em;
     text-transform: uppercase;
-}
-.headline__faq {
-    font-family: 'Changa', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    margin-bottom: 0;
+    letter-spacing: 3px;
+    color: rgb(0, 13, 37);
+    margin: 0;
 }
 
-.ball {
-    background-color: yellow;
-    border-radius: 50%;
-    padding: 0.5em 1em 0.5em 1em;
-}
-.number {
-    font-family: 'Changa', sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    color: rgba(0, 18, 51, 1);
+.modal__subtitle {
+    text-transform: uppercase;
+    color: rgb(0, 13, 37);
+    font-weight: 600;
+    font-size: 1.75em;
+    margin: 0;
 }
 
-.img-ads{
-    width: 80%;
-    height: auto;
+.modal__description {
+    color: rgb(0, 24, 69);
+    margin: 0.25em 0 1.5em 0;
 }
-.img-logo {
-    width: 100px;
-    height: auto;
+
+.especial-text {
+    color: rgb(255, 238, 3);
+    -webkit-text-stroke-width: 1.5px; 
+            -webkit-text-stroke-color: rgb(0, 24, 69) ; 
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .btn-tertiary {
@@ -73,98 +105,7 @@ color: white;
 font-weight: 600;
 }
 
-.btn-quaternary {
-    background: linear-gradient(to left, rgb(255, 238, 3) 50%, rgb(0, 78, 146) 50%); 
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    border: 2px solid rgb(0, 78, 146);
-    /* color: rgba(0, 18, 51, 1); */
-    color: rgb(0, 78, 146);
-}
 
-.btn-quaternary:hover {
-background-position: left bottom;
-color: rgb(255, 238, 3);
-border: 2px solid rgb(255, 238, 3);;
-}
-
-.btn-quaternary--active {
-background: rgb(0, 78, 146);
-color: white;
-font-weight: 600;
-}
-
-.first-section {
-    height: 80vh;
-    justify-content: space-around;
-}
-.plano-2024, .detalles, .faq, .who-three {
-    background-color: white;
-}
-
-.plano-2024, .raz, .detalles, .who, .faq, .who-two, .who-three-text {
-    padding: 4em 0;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.faq__text {
-    margin-top: 0.5em;
-    margin-bottom: 4em;
-}
-
-.faq__hr {
-    width: 200px;
-    border-top: 6px solid rgba(0, 18, 51, 1);
-    border-bottom: 3px solid yellow;
-}
-
-footer {
-    background-color: black;
-    text-align: center;
-    padding: 3em;
-}
-
-.mt-4 {
-    margin-top: 4em;
-}
-
-/* 5 Razones*/
-.razones {
-    justify-content: space-around;
-}
-.razones__item {
-    padding: 15px;
-    text-align: center;
-    border-radius: 25px;
-    background-color: rgba(0, 18, 51, 0.5);
-    height: 100%;
-}
-
-.razones__icon {
-    font-size: 3em;
-}
-
-.razones__title {
-    font-family: 'Changa', sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-}
-
-.razones__description {
-    font-weight: 300;
-}
-
-.text-small {
-    font-size: 75%;
-}
-
-*{
-    scroll-behavior: smooth;
-}
 
 /**
  * ----------------------------------------
@@ -244,3 +185,11 @@ footer {
     }
   }
   
+
+/* Media Queria Query Smaller then Tablet 992px */
+@media (max-width: 992px) {
+    .modal {
+        width: 65%; 
+    }
+}
+

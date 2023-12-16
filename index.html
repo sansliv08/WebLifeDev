@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/nav-social.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/first-modal.css">
 	<!-- Verification of dominio to Pixel work -->
 	<meta name="facebook-domain-verification" content="oy5bi3uaus3g712kmig3az92dw0t89" />
 
@@ -187,11 +187,27 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-content rounded-simple text-center">
+          <p class="modal__subtitle">Especial Offer</p>
+          <h2 class="modal__title"><span class="especial-text">10<sup>%</sup></span> OFF</h2>
+          <p class="modal__description">Until the 31st of December</p>
+            <a href="new-website.html" class="btn btn-tertiary btn-lg text-bold heartbeat">
+              Get the Deal
+            </a>
+        </div>
+      </div>
+    </div>
   </main>
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/sketch.js"></script>
+  <script src="js/first-modal.js"></script>
   <script>
     // ----------------------------------------
     // Particle

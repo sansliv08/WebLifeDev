@@ -46,7 +46,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 1px 1px #000;
+    text-shadow: 0.5px 1px #000;
 }
 
 .timer:hover {
