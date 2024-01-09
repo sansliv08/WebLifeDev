@@ -1,7 +1,12 @@
+const countdownEl = document.getElementById('countdown');
+const countdownElFinished = document.getElementById('countdown-finished');
+
 const days = document.getElementById('days');
 const hours = document.getElementById('hours');
 const mins = document.getElementById('mins');
 const secs = document.getElementById('secs');
+
+let countDown = '';
 
     const formatTime = (time) => {
         return time < 10 ? `0${time}` : time;
@@ -21,11 +26,20 @@ const updateCountDown =(deadline) => {
     hours.textContent = formatTime(calHours);
     mins.textContent = formatTime(calMins);
     secs.textContent = formatTime(calSecs);
+
+    if(timeDifference < 0) {
+        countdownEl.hidden = true;
+    } else {
+        countdownEl.hidden = false;
+    }
 }
 
-const countDown = (targetDate) => {
+countDown = (targetDate) => {
     setInterval(() => updateCountDown(targetDate), 1000);
 }
 
-const targetDate = new Date("Jan 01 2024 00:00");
+const targetDate = new Date("Feb 01 2024 00:00");
 countDown(targetDate);
+
+
+
