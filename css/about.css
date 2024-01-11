@@ -10,8 +10,47 @@
     height: 100%;
 }
 
+.espservices__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 18, 51, 0.5);
+}
+
+.espservices__item--overlay {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: rgba( 0, 102, 200, 1);
+    transition: 0.8s ease-in;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.espservices__item:hover .services__picture {
+    filter: brightness(1);
+    transform: scale(1.5);
+}
+
+.espservices__item:hover .espservices__item--overlay, .tools__item:hover .tools__item--overlay {
+    display: block;
+}
+
+.tools__item:hover .tools__title {
+    display: none;
+}
+
 .services__icon {
     font-size: 3em;
+}
+
+.services__picture {
+    padding: 0.75em;
+    filter: brightness(0.85);
+    transition: transform 0.8s;
 }
 
 .services__title {
@@ -20,9 +59,54 @@
     letter-spacing: 2px;
 }
 
+.tools__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 18, 51, 0.5);
+}
+
+.tools__item--overlay {
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 30px;
+    background-color: rgba( 0, 102, 200, 1);
+    transition: 0.8s ease-in;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.tools__title {
+    position: absolute;
+    text-shadow:  0px 0px 2px rgb(0, 13, 37) ;
+    font-weight: 600;;
+    opacity: 1;
+    padding: 0 30px;
+    line-height: 20px;
+}
+
+.tools__picture {
+    filter: brightness(0.1);
+    transition: transform 0.8s;
+}
+
+.tools__item:hover .tools__picture {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
 .services__description {
     font-weight: 300;
     margin-bottom: 0;
+}
+
+.services__view {
+    font-family: 'Changa', sans-serif;
+    font-weight: 200;
+    letter-spacing: 3px;
 }
 
 .text__small {
@@ -32,7 +116,7 @@
 
 /* Team */
 .team {
-    background-color: rgb(0, 102, 200);
+    background-color: rgb(0, 102, 200) !important;
     justify-content: space-around;
 }
 
