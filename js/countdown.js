@@ -38,7 +38,7 @@ countDown = (targetDate) => {
     setInterval(() => updateCountDown(targetDate), 1000);
 }
 
-const targetDate = new Date("Jun 01 2024 00:00");
+const targetDate = new Date("Aug 01 2024 00:00");
 countDown(targetDate);
 
 

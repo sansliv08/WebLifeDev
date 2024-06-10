@@ -82,6 +82,9 @@
 .nav-primary li:nth-child(2)::after {
     content: 'Instagram';
 }
+.nav-primary li:nth-child(3)::after {
+    content: 'Tiktok';
+}
 .nav-primary li:last-child::after {
     content: 'LinkedIn';
 }
